@@ -1,0 +1,33 @@
+.cart-info {
+  color: black;
+}
+.carts-button button {
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  height: 48px;
+  color: #fff;
+}
+.clearCart {
+  background-color: #ff3030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.clearCart p {
+  margin-right: 5px;
+}
+.reviewOrder {
+  background-color: #ff9900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviewOrder p {
+  margin-right: 5px;
+}
