@@ -23,11 +23,9 @@ const Shop = () => {
         savedCart.push(addedProduct);
       }
     }
-    // console.log(savedCart);
     setCart(savedCart);
   }, [products]);
 
-  // const clearAll = () => setCart([]);
   const handleAddToCart = (product) => {
     let newCart = [];
     const exist = cart.find((p) => p.id === product.id);
