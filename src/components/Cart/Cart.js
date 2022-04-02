@@ -30,6 +30,7 @@ const Cart = (props) => {
   return (
     <div>
       <div className="cart-info">
+        <h3>Order Summary</h3>
         <p>Selected Items: {quantity}</p>
         {<p>Total Price: ${total()}</p>}
         <p>Shipping Charge: ${totalShipping()}</p>
@@ -43,12 +44,7 @@ const Cart = (props) => {
             <FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon>
           </button>
         </div>
-        <div>
-          <button className="reviewOrder">
-            <p>Review Order</p>
-            <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
-          </button>
-        </div>
+        <div>{props.children}</div>
       </div>
     </div>
   );
