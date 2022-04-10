@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./LogIn.css";
+import GoogleSignIn from "../../images/btn_google_signin_dark_focus_web.png";
 
 const LogIn = () => {
   return (
@@ -24,6 +25,22 @@ const LogIn = () => {
             Create An Account
           </Link>
         </p>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className="hr-line-style">
+            <div className="form-hr">
+              <hr />
+            </div>
+            <p style={{ display: "inline" }}>or</p>
+            <div className="form-hr">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div className="google-sign-in">
+          <button>
+            <img src={GoogleSignIn} alt="" />
+          </button>
+        </div>
       </div>
     </div>
   );

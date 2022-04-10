@@ -39,3 +39,28 @@
   color: #ff9900;
   text-decoration: none;
 }
+.hr-line-style {
+  display: flex;
+}
+.hr-line-style p {
+  font-size: 20px;
+  color: #ff9900;
+}
+.form-hr {
+  width: 30%;
+}
+.google-sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.google-sign-in button {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+.google-sign-in button:hover {
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  border-radius: 5px;
+}
