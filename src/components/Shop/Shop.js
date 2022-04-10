@@ -43,7 +43,7 @@ const Shop = () => {
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
-          <Link to="/orders">
+          <Link style={{ textDecoration: "none" }} to="/orders">
             <button className="reviewOrder">
               <p>Review Order</p>
               <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>

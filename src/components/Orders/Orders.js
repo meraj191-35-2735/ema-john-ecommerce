@@ -32,9 +32,9 @@ const Orders = () => {
       </div>
       <div className="cart-container">
         <Cart cart={cart}>
-          <Link to="/inventory">
+          <Link style={{ textDecoration: "none" }} to="/shipment">
             <button className="reviewOrder">
-              <p>Proceed Checkout</p>
+              <p style={{ fontSize: "12px" }}>Proceed Shipping</p>
               <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
             </button>
           </Link>

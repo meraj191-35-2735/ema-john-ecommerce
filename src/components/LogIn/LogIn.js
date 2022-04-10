@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./LogIn.css";
 import GoogleSignIn from "../../images/btn_google_signin_dark_focus_web.png";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -8,7 +8,10 @@ import auth from "../../firbase.init";
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  let location = useLocation();
+
   const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
@@ -21,7 +24,7 @@ const LogIn = () => {
   };
 
   if (user) {
-    navigate("/shop");
+    navigate(from, { replace: true });
   }
 
   const handleUserSignIn = (event) => {
